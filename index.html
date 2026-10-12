@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main>
+    <header><h1>Snake<span>.</span></h1><p>Score <strong id="score">0</strong></p></header>
+    <canvas id="board" width="400" height="400" aria-label="Snake game board"></canvas>
+    <p id="status" role="status">Press an arrow key or tap a direction to start.</p>
+    <div class="controls" aria-label="Direction controls">
+      <button data-direction="up" aria-label="Move up">↑</button>
+      <button data-direction="left" aria-label="Move left">←</button>
+      <button data-direction="down" aria-label="Move down">↓</button>
+      <button data-direction="right" aria-label="Move right">→</button>
+    </div>
+    <button id="restart">Restart</button>
+    <p class="hint">Eat the orange dots. Avoid the walls and yourself.</p>
+  </main>
+</body>
+</html>
